@@ -2,7 +2,7 @@ package ru.mipt.acsl.decode.idea.plugin;
 
 import ru.mipt.acsl.decode.parser.DecodeLanguage;
 import ru.mipt.acsl.decode.parser.DecodeLexerAdapter;
-import ru.mipt.acsl.decode.parser.idea.DecodeParser;
+import ru.mipt.acsl.decode.parser.DecodeParser;
 import ru.mipt.acsl.decode.parser.psi.DecodeFile;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.Language;
