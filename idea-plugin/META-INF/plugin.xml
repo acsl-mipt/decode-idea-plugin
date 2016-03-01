@@ -26,7 +26,7 @@
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
     <fileTypeFactory implementation="ru.mipt.acsl.decode.idea.plugin.DecodeFileTypeFactory"/>
-    <lang.parserDefinition language="Decode" implementationClass="ru.mipt.acsl.decode.idea.plugin.DecodeParserDefinition"/>
+    <lang.parserDefinition language="Decode" implementationClass="ru.mipt.acsl.decode.parser.DecodeParserDefinition"/>
     <lang.syntaxHighlighterFactory language="Decode" implementationClass="ru.mipt.acsl.decode.idea.plugin.DecodeSyntaxHighlighterFactory"/>
     <completion.contributor language="Decode" implementationClass="ru.mipt.acsl.decode.idea.plugin.DecodeCompletionContributor"/>
   </extensions>

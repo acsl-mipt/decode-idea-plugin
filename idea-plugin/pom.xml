@@ -12,14 +12,9 @@
     </parent>
 
     <name>Decode IDEA Plugin</name>
-    <description>IDEA plugin for Decode files</description>
+    <description>IDEA plugin for Decode</description>
 
     <dependencies>
-        <dependency>
-            <groupId>ru.mipt.acsl.decode</groupId>
-            <artifactId>model</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>ru.mipt.acsl.decode</groupId>
             <artifactId>parser</artifactId>
