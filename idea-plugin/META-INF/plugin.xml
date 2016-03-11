@@ -1,27 +1,19 @@
 <idea-plugin version="2">
   <id>ru.mipt.acsl.decode.idea.plugin</id>
-  <name>Decode Tools</name>
-  <version>0.3.0-SNAPSHOT</version>
+  <name>Decode</name>
+  <version>0.4.2</version>
   <vendor email="acsl@mipt.ru" url="http://acsl.mipt.ru/">ACSL</vendor>
 
   <description><![CDATA[
-      Device description interface language tools.
+      Device components description interface language tools.
+      http://acsl-mipt.github.io/
     ]]></description>
 
-  <change-notes><![CDATA[
-      0.3.0-SNAPSHOT Updated Decode syntax.
-      0.1.0 Initial version.
-    ]]>
+  <change-notes>
   </change-notes>
 
-  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="131"/>
-
-  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
-  -->
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
