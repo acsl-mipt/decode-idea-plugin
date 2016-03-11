@@ -33,7 +33,7 @@ class DecodeSyntaxHighlighter extends SyntaxHighlighterBase {
       case LEFT_BRACKET | RIGHT_BRACKET => Brackets
       case COMMA => Comma
       case SLASH => Slash
-      case DOT => Dot
+      case DOT | DOTS => Dot
       case STAR => Star
       case COMMENT => LineComment
       case MULTILINE_COMMENT => BlockComment
@@ -69,5 +69,5 @@ object DecodeSyntaxHighlighter {
 
   private val KeywordTokens = HashSet(NAMESPACE, COMPONENT, COMMAND, DYNAMIC, EVENT, MESSAGE, STATUS, PARAMETER,
     ARRAY, ENUM, NATIVE, FINAL, STRUCT, UNIT_TOKEN, TYPE_KEYWORD, SUBCOMPONENT, DISPLAY, PLACEMENT, BEFORE, AFTER,
-    COLON, ALIAS, WITH, PARAMETERS, IMPORT, AS, DEFAULT, LANGUAGE, VAR, EXTENDS, SCRIPT, FOR)
+    COLON, ALIAS, WITH, PARAMETERS, IMPORT, AS, DEFAULT, LANGUAGE, VAR, EXTENDS, SCRIPT, FOR, RANGE)
 }
