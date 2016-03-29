@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>ru.mipt.acsl.decode.idea.plugin</id>
   <name>Decode</name>
-  <version>0.4.3</version>
+  <version>0.4.5</version>
   <vendor email="acsl@mipt.ru" url="http://acsl.mipt.ru/">ACSL</vendor>
 
   <description><![CDATA[
