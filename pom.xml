@@ -6,7 +6,7 @@
 
     <groupId>ru.mipt.acsl.decode</groupId>
     <artifactId>decode-idea-plugin</artifactId>
-    <version>0.4.5</version>
+    <version>0.4.7</version>
     <packaging>pom</packaging>
 
     <name>Decode IDEA plugin build</name>

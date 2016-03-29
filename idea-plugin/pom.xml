@@ -2,12 +2,12 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>idea-plugin</artifactId>
-    <version>0.4.5</version>
+    <version>0.4.7</version>
     <packaging>pom</packaging>
     <parent>
         <groupId>ru.mipt.acsl.decode</groupId>
         <artifactId>decode-idea-plugin</artifactId>
-        <version>0.4.5</version>
+        <version>0.4.7</version>
         <relativePath>..</relativePath>
     </parent>
 
