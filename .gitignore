@@ -1,0 +1,9 @@
+*/target/*
+*.zip
+*~
+idea-flex.skeleton
+*.iml
+/classes/
+JFlex.jar
+/.idea/
+pom.xml.versionsBackup
