@@ -23,21 +23,4 @@
     <completion.contributor language="Decode" implementationClass="ru.mipt.acsl.decode.idea.plugin.DecodeCompletionContributor"/>
   </extensions>
 
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
-
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
-
-  <actions>
-    <!-- Add your actions here -->
-    <group class="ru.mipt.acsl.decode.idea.plugin.DecodeActionGroup" id="DecodeActionGroup" text="Decode">
-      <action class="ru.mipt.acsl.decode.idea.plugin.DecodeGenerateSqliteForDecodeSourcesAction" id="StoreToSqlite"
-              text="Generate SQLite for Decode sources"/>
-      <add-to-group group-id="ToolsMenu"/>
-    </group>
-  </actions>
-
 </idea-plugin>

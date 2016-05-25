@@ -1,0 +1,69 @@
+buildscript {
+    repositories {
+        maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
+    }
+}
+
+plugins {
+    id 'org.jetbrains.intellij' version '0.1.2'
+}
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'idea'
+
+group = 'ru.mipt.acsl'
+
+sourceSets.main {
+    scala.srcDir 'src/main/java'
+    scala.srcDir 'decode/parser/src/main/java'
+    scala.srcDir 'decode/parser/src/main/scala'
+    scala.srcDir 'decode/model/src/main/scala'
+    scala.srcDir 'decode/parser/gen'
+    resources.srcDir 'decode/parser/src/main/resources'
+    java.srcDirs = []
+}
+
+tasks.withType(ScalaCompile) {
+    scalaCompileOptions.useAnt = false // Use incremental compilation
+    scalaCompileOptions.additionalParameters = ["-Xmax-classfile-name", "140"]
+}
+
+repositories {
+    mavenCentral()
+}
+
+def scalaBinaryVersion = '2.11'
+
+dependencies {
+    compile 'com.google.guava:guava:19.0'
+    compile 'ch.qos.logback:logback-classic:1.1.2'
+    compile 'org.scala-lang:scala-library:2.11.8'
+    compile "com.typesafe.scala-logging:scala-logging_$scalaBinaryVersion:3.1.0"
+    compile 'org.jetbrains:annotations:13.0'
+    compile "org.apache.commons:commons-lang3:3.4"
+    testCompile "org.scalatest:scalatest_$scalaBinaryVersion:3.0.0-M15"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
+
+intellij {
+    version ideaVersion
+    pluginName 'Decode'
+    plugins 'IntelliLang'
+    downloadSources Boolean.valueOf(sources)
+    updateSinceUntilBuild = false
+    //sameSinceUntilBuild Boolean.valueOf(isEAP)
+}
+
+idea {
+    project {
+        jdkName = javaVersion
+        languageLevel = javaVersion
+    }
+}
+
+version = "${pluginVersion}.$buildNumber"

@@ -1,8 +1,7 @@
 package ru.mipt.acsl.decode.idea.plugin
 
-import ru.mipt.acsl.decode.model.domain.impl.registry.Registry
-import ru.mipt.acsl.decode.modeling.ModelingMessage
-import ru.mipt.acsl.decode.modeling.TransformationResult
+import ru.mipt.acsl.decode.model.registry.Registry
+import ru.mipt.acsl.modeling.{ModelingMessage, TransformationResult}
 
 import scala.collection.immutable.Seq
 

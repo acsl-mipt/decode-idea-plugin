@@ -27,7 +27,7 @@ class DecodeSyntaxHighlighter extends SyntaxHighlighterBase {
       case _ if KeywordTokens.contains(tokenType) => Keyword
       case ELEMENT_NAME_TOKEN | ESCAPED_NAME => ElementName
       case ELEMENT_ID => ElementId
-      case NON_NEGATIVE_NUMBER => NonNegativeNumber
+      case NON_NEGATIVE_INTEGER => NonNegativeNumber
       case LEFT_BRACE | RIGHT_BRACE => Braces
       case LEFT_PAREN | RIGHT_PAREN => Parens
       case LEFT_BRACKET | RIGHT_BRACKET => Brackets
@@ -68,6 +68,6 @@ object DecodeSyntaxHighlighter {
   }
 
   private val KeywordTokens = HashSet(NAMESPACE, COMPONENT, COMMAND, DYNAMIC, EVENT, MESSAGE, STATUS, PARAMETER,
-    ARRAY, ENUM, NATIVE, FINAL, STRUCT, UNIT_TOKEN, TYPE_KEYWORD, SUBCOMPONENT, DISPLAY, PLACEMENT, BEFORE, AFTER,
+    ENUM, NATIVE, FINAL, STRUCT, MEASURE_TOKEN, TYPE_KEYWORD, SUBCOMPONENT, DISPLAY, PLACEMENT, BEFORE, AFTER,
     COLON, ALIAS, WITH, PARAMETERS, IMPORT, AS, DEFAULT, LANGUAGE, VAR, EXTENDS, SCRIPT, FOR, RANGE)
 }
